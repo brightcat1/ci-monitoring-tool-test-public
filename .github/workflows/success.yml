@@ -1,0 +1,12 @@
+name: Success Test
+on:
+  workflow_dispatch:
+jobs:
+  Failed-Test:
+    runs-on: ubuntu-latest
+    steps:
+      - name: echo step
+        run: |
+          echo "Hello World"
+      - name: Try to success
+        run: exit 0
